@@ -101,7 +101,7 @@
   .flag{display:inline-block; font-size:.68rem; color:#fff; border-radius:6px; padding:1px 7px; margin-left:6px; vertical-align:1px;}
   .flag.book{background:var(--d3);}
   .flag.cash{background:var(--d1);}
-  a.loc, .poi, a.gm{
+  a.loc, .poi, .go, a.gm{
     color:inherit; text-decoration:none; border-bottom:1px dotted var(--muted);
   }
   a.am{
@@ -307,7 +307,7 @@
         <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BAT3&destination=%E6%B1%89%E5%BA%AD%E9%85%92%E5%BA%97%E6%B7%B1%E5%9C%B3%E4%BC%9A%E5%B1%95%E4%B8%AD%E5%BF%83%E7%A6%8F%E6%98%9F%E5%9C%B0%E9%93%81%E7%AB%99%E5%BA%97&travelmode=driving" target="_blank" rel="noopener">🧭 全程导航（机场→酒店）</a>
       </div>
       <div class="itm"><div class="tm">17:15</div><div class="tx"><span class="loc">✈️ MU6667 起飞</span> · 北京大兴 → 深圳宝安T3，20:15 落地</div></div>
-      <div class="itm"><div class="tm">21:00</div><div class="tx"><span class="poi">打车去酒店</span>（约 45 分钟 / ¥100 左右），或机场地铁11号线转乘</div></div>
+      <div class="itm"><div class="tm">21:00</div><div class="tx"><span class="go" data-from="深圳宝安国际机场T3" data-to="汉庭酒店(深圳会展中心福星地铁站店)" data-mode="driving">打车去酒店</span>（约 45 分钟 / ¥100 左右），或机场地铁11号线转乘</div></div>
       <div class="itm"><div class="tm">22:00</div><div class="tx">入住休息，明早赶高铁，早点睡
         <div class="stay">🏨 汉庭深圳会展中心福星地铁站酒店（1晚）</div></div></div>
     </div>
@@ -324,20 +324,20 @@
       <div class="daynav">
         <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E9%A6%99%E6%B8%AF%E6%97%BA%E8%A7%92%E7%BB%B4%E6%99%AF%E9%85%92%E5%BA%97&destination=%E5%A4%AA%E5%B9%B3%E5%B1%B1%E5%87%8C%E9%9C%84%E9%98%81&waypoints=%E9%87%91%E5%8D%8E%E5%86%B0%E5%8E%85%7C%E6%B2%B9%E9%BA%BB%E5%9C%B0%E8%AD%A6%E7%BD%B2%7C%E5%B0%96%E6%B2%99%E5%92%80%E6%98%9F%E5%85%89%E5%A4%A7%E9%81%93%7C%E4%B8%AD%E7%92%B0%E7%A0%81%E5%A4%B4&travelmode=transit" target="_blank" rel="noopener">🧭 全天多点导航</a>
       </div>
-      <div class="itm"><div class="tm">08:15</div><div class="tx">深圳酒店退房出发，<span class="poi">地铁/打车去福田站</span></div></div>
+      <div class="itm"><div class="tm">08:15</div><div class="tx">深圳酒店退房出发，<span class="go" data-from="汉庭酒店(深圳会展中心福星地铁站店)" data-to="福田站" data-mode="transit">地铁/打车去福田站</span></div></div>
       <div class="itm"><div class="tm">08:45</div><div class="tx">到福田站，过港方自助通道（刷通行证+指纹）</div></div>
       <div class="itm"><div class="tm">09:53</div><div class="tx"><span class="loc">🚄 G5811 发车</span> → 10:07 抵香港西九龙站</div></div>
-      <div class="itm"><div class="tm">11:00</div><div class="tx">西九龙站打车/地铁到旺角，<span class="poi">旺角维景酒店</span>寄存行李
+      <div class="itm"><div class="tm">11:00</div><div class="tx">西九龙站打车/地铁到旺角，<span class="poi" data-q="香港旺角维景酒店">旺角维景酒店</span>寄存行李
         <div class="note">西九龙→旺角：出租车最省事（约HK$40）；行李不放身上，后面轻装玩</div></div></div>
-      <div class="itm"><div class="tm">11:15</div><div class="tx">午餐：<span class="poi">金华冰厅</span> 菠萝油+奶茶（太子站）</div></div>
+      <div class="itm"><div class="tm">11:15</div><div class="tx">午餐：<span class="poi" data-q="金华冰厅 太子">金华冰厅</span> 菠萝油+奶茶（太子站）</div></div>
       <div class="itm"><div class="tm">12:30</div><div class="tx">旺角街市、通菜街（金鱼街）随逛，朗豪坊路过可选<span class="flag cash">现金店·椰汁大王/嘉多娜在这片</span></div></div>
-      <div class="itm"><div class="tm">14:00</div><div class="tx">沿弥敦道南行到油麻地：<span class="poi">果栏</span>、<span class="poi">油麻地警署</span>（港剧取景地）</div></div>
-      <div class="itm"><div class="tm">15:15</div><div class="tx">尖沙咀：<span class="poi">星光大道</span>、维港海滨长廊，对岸中环天际线</div></div>
-      <div class="itm"><div class="tm">17:00</div><div class="tx"><span class="poi">天星小轮</span> → 中环码头（约HK$5，坐上层吹海风）</div></div>
+      <div class="itm"><div class="tm">14:00</div><div class="tx">沿弥敦道南行到油麻地：<span class="poi" data-q="油麻地果栏">果栏</span>、<span class="poi">油麻地警署</span>（港剧取景地）</div></div>
+      <div class="itm"><div class="tm">15:15</div><div class="tx">尖沙咀：<span class="poi" data-q="尖沙咀星光大道">星光大道</span>、维港海滨长廊，对岸中环天际线</div></div>
+      <div class="itm"><div class="tm">17:00</div><div class="tx"><span class="poi" data-q="尖沙咀天星码头">天星小轮</span> → 中环码头（约HK$5，坐上层吹海风）</div></div>
       <div class="itm"><div class="tm">17:40</div><div class="tx">中环晚餐：威灵顿街排档一带</div></div>
-      <div class="itm"><div class="tm">19:00</div><div class="tx"><span class="poi">15路巴士上山</span>（HK$12，弯多但便宜且免排队）<span class="flag book">摩天台428建议提前线上购票</span></div></div>
+      <div class="itm"><div class="tm">19:00</div><div class="tx"><span class="go" data-from="中环(交易广场)巴士总站" data-to="太平山顶" data-mode="transit">15路巴士上山</span>（HK$12，弯多但便宜且免排队）<span class="flag book">摩天台428建议提前线上购票</span></div></div>
       <div class="itm"><div class="tm">20:00</div><div class="tx"><span class="loc">⛰️ 太平山凌霄阁摩天台428</span> 看夜景（重头戏）</div></div>
-      <div class="itm"><div class="tm">21:45</div><div class="tx">坐<span class="poi">山顶缆车</span>下山体验（排队长就改15路）→ 地铁回旺角 → 取行李入住
+      <div class="itm"><div class="tm">21:45</div><div class="tx">坐<span class="poi" data-q="山顶缆车总站">山顶缆车</span>下山体验（排队长就改15路）→ 地铁回旺角 → 取行李入住
         <div class="stay">🏨 香港旺角维景酒店（1晚）</div></div></div>
     </div>
   </details>
@@ -357,15 +357,15 @@
       <div class="itm"><div class="tm">09:45</div><div class="tx">行李存到上环码头附近的寄存点<span class="flag cash">约HK$35–45/件·建议提前预订</span><div class="note">LuggageHero（选9点开门的网点）或 Bounce（上环站旁，HK$35/件/天，11:00开门）；不想比价就用码头官方寄存（信德中心1楼103号铺，7:00开门，最省心但按你时长约HK$170/件）</div></div></div>
       <div class="itm"><div class="tm">10:15</div><div class="tx">地铁到铜锣湾：SOGO、希慎广场、时代广场<span class="flag cash">荣记粉面只收现金</span></div></div>
       <div class="itm"><div class="tm">12:00</div><div class="tx">午餐：<span class="poi">牛奶冰室</span> 拉丝菠萝包 或 <span class="poi">荣记粉面</span> 车仔面牛腩粉</div></div>
-      <div class="itm"><div class="tm">13:30</div><div class="tx">中环：<span class="poi">"所有目的地"楼梯</span>打卡</div></div>
-      <div class="itm"><div class="tm">14:00</div><div class="tx"><span class="poi">叮叮车</span>（HK$3）→ 坚尼地城，沿途港岛老街景</div></div>
+      <div class="itm"><div class="tm">13:30</div><div class="tx">中环：<span class="poi" data-q="中环 皇后大道中">"所有目的地"楼梯</span>打卡</div></div>
+      <div class="itm"><div class="tm">14:00</div><div class="tx"><span class="go" data-from="中环叮叮车总站" data-to="坚尼地城" data-mode="transit">叮叮车</span>（HK$3）→ 坚尼地城，沿途港岛老街景</div></div>
       <div class="itm"><div class="tm">14:40</div><div class="tx">坚尼地城：海边公园、网红咖啡店；晚餐可选<span class="poi">卓记</span>（三杯鸡、黑松露牛肉炒饭）</div></div>
-      <div class="itm"><div class="tm">16:45</div><div class="tx">回中环/上环扫伴手礼：<span class="poi">珍妮曲奇</span>（上环，只收现金）、<span class="poi">永吉街柠檬王</span><span class="flag cash">现金</span><div class="note">曲奇保质期短，今天买正好；药品前两天在万宁已扫完</div></div></div>
+      <div class="itm"><div class="tm">16:45</div><div class="tx">回中环/上环扫伴手礼：<span class="poi" data-q="珍妮曲奇 上环">珍妮曲奇</span>（上环，只收现金）、<span class="poi" data-q="永吉街柠檬王">永吉街柠檬王</span><span class="flag cash">现金</span><div class="note">曲奇保质期短，今天买正好；药品前两天在万宁已扫完</div></div></div>
       <div class="itm"><div class="tm">18:15</div><div class="tx">回寄存点取行李（人已在上环，零回头路）</div></div>
-      <div class="itm"><div class="tm">19:15</div><div class="tx">到<span class="poi">上环港澳码头</span>（信德中心3楼），办出境</div></div>
+      <div class="itm"><div class="tm">19:15</div><div class="tx">到<span class="poi" data-q="上环港澳客运码头">上环港澳码头</span>（信德中心3楼），办出境</div></div>
       <div class="itm"><div class="tm">20:30</div><div class="tx"><span class="loc">🚢 金光飞航 → 氹仔客运码头</span>（约21:30到）<span class="flag book">当天上午手机购票</span></div></div>
-      <div class="itm"><div class="tm">21:45</div><div class="tx">码头打车/步行到<span class="poi">盛世酒店</span>入住，放下行李</div></div>
-      <div class="itm"><div class="tm">22:15</div><div class="tx">精力还行就去：<span class="poi">威尼斯人</span> → <span class="poi">伦敦人</span> → <span class="poi">巴黎人</span> 夜景环线，累了直接睡
+      <div class="itm"><div class="tm">21:45</div><div class="tx">码头打车/步行到<span class="poi" data-q="澳门盛世酒店">盛世酒店</span>入住，放下行李</div></div>
+      <div class="itm"><div class="tm">22:15</div><div class="tx">精力还行就去：<span class="poi" data-q="澳门威尼斯人">威尼斯人</span> → <span class="poi" data-q="澳门伦敦人">伦敦人</span> → <span class="poi" data-q="澳门巴黎人">巴黎人</span> 夜景环线，累了直接睡
         <div class="stay">🏨 澳门盛世酒店（9/26–9/28 两晚，之后不用再挪行李）</div></div></div>
     </div>
   </details>
@@ -382,10 +382,10 @@
         <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E5%A4%A7%E4%B8%89%E5%B7%B4%E7%89%8C%E5%9D%8A&destination=%E8%AD%B0%E4%BA%8B%E4%BA%AD%E5%89%8D%E5%9C%B0&waypoints=%E5%A4%A7%E7%A0%B2%E5%8F%B0%7C%E7%A6%8F%E9%9A%86%E6%96%B0%E8%A1%97%7C%E5%B4%97%E9%A0%82%E5%89%8D%E5%9C%B0&travelmode=walking" target="_blank" rel="noopener">🧭 全天多点导航（步行）</a>
       </div>
       <div class="itm"><div class="tm">09:15</div><div class="tx">酒店出发，公交（MOP$6）或打车（约MOP$40–50）过海去澳门半岛</div></div>
-      <div class="itm"><div class="tm">10:00</div><div class="tx"><span class="poi">大三巴牌坊</span> → 右侧石阶上 <span class="poi">哪吒庙</span> → <span class="poi">旧城墙遗址</span> → <span class="poi">大炮台</span>俯瞰半岛<div class="note">顺路可先去最香饼家（上午货最齐，肉心杏仁饼，备少量现金）</div></div></div>
+      <div class="itm"><div class="tm">10:00</div><div class="tx"><span class="poi">大三巴牌坊</span> → 右侧石阶上 <span class="poi" data-q="大三巴哪吒庙">哪吒庙</span> → <span class="poi" data-q="大三巴旧城墙遗址">旧城墙遗址</span> → <span class="poi" data-q="大三巴炮台">大炮台</span>俯瞰半岛<div class="note">顺路可先去最香饼家（上午货最齐，肉心杏仁饼，备少量现金）</div></div></div>
       <div class="itm"><div class="tm">12:00</div><div class="tx">步行8分钟到<span class="poi">福隆新街</span>：晚清岭南建筑群拍照 + 午餐<span class="flag cash">添发碗仔翅只收现金</span><div class="note">三元及第粥、冠环球肉干都在这条街</div></div></div>
       <div class="itm"><div class="tm">14:00</div><div class="tx"><span class="poi">东望洋新街</span>彩色墙坡道 → <span class="poi">岗顶前地</span>（岗顶剧院、圣奥斯定教堂）</div></div>
-      <div class="itm"><div class="tm">15:30</div><div class="tx"><span class="poi">议事亭前地</span>波浪地砖 → 新马路买伴手礼：<span class="poi">钜记</span>、<span class="poi">咀香园</span>（免费试吃，微信支付宝都行）、<span class="poi">柠檬王</span></div></div>
+      <div class="itm"><div class="tm">15:30</div><div class="tx"><span class="poi">议事亭前地</span>波浪地砖 → 新马路买伴手礼：<span class="poi" data-q="钜记饼家 新马路">钜记</span>、<span class="poi" data-q="咀香园饼家 议事亭前地">咀香园</span>（免费试吃，微信支付宝都行）、<span class="poi" data-q="柠檬王 新马路">柠檬王</span></div></div>
       <div class="itm"><div class="tm">17:30</div><div class="tx">公交/打车回氹仔</div></div>
       <div class="itm"><div class="tm">18:30</div><div class="tx"><span class="poi">官也街</span>晚餐：老Day牛杂（微辣）、泽贤记鸡蛋仔（先下单再逛）</div></div>
       <div class="itm"><div class="tm">20:00</div><div class="tx">自由安排：威尼斯人室内运河 / 回酒店休息</div></div>
@@ -404,8 +404,8 @@
         <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E5%AE%89%E5%BE%B7%E9%B2%81%E9%A5%BC%E5%BA%97%E8%B7%AF%E7%92%B0%E7%B8%BD%E5%BA%97&destination=%E6%BE%B3%E9%96%80%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4&waypoints=%E5%AE%98%E4%B9%9F%E8%A1%97&travelmode=driving" target="_blank" rel="noopener">🧭 全天多点导航</a>
       </div>
       <div class="itm"><div class="tm">08:30</div><div class="tx">酒店出发，公交约10–15分钟到<span class="poi">路环市区</span></div></div>
-      <div class="itm"><div class="tm">09:00</div><div class="tx"><span class="poi">安德鲁饼店总店</span>现烤葡挞（早到避排队）→ <span class="poi">十月初五马路</span>彩色房子海边散步 → 路环码头吹风</div></div>
-      <div class="itm"><div class="tm">11:15</div><div class="tx">回<span class="poi">官也街</span>收尾：泽贤记先下单 → 老Day牛杂、莫义记榴莲雪糕、长洲糯米糍、晃记凤凰卷；最后采购：<span class="poi">O-Moon</span> 花砖冰箱贴、<span class="poi">Macau 520</span> 瓷砖杯垫、钜记肉干<span class="flag cash">小店备现金</span><div class="note">短保质期的今天买正好</div></div></div>
+      <div class="itm"><div class="tm">09:00</div><div class="tx"><span class="poi" data-q="安德鲁饼店 路环总店">安德鲁饼店总店</span>现烤葡挞（早到避排队）→ <span class="poi" data-q="路环十月初五马路">十月初五马路</span>彩色房子海边散步 → 路环码头吹风</div></div>
+      <div class="itm"><div class="tm">11:15</div><div class="tx">回<span class="poi">官也街</span>收尾：泽贤记先下单 → 老Day牛杂、莫义记榴莲雪糕、长洲糯米糍、晃记凤凰卷；最后采购：<span class="poi" data-q="O-Moon 官也街">O-Moon</span> 花砖冰箱贴、<span class="poi" data-q="Macau 520 官也街">Macau 520</span> 瓷砖杯垫、钜记肉干<span class="flag cash">小店备现金</span><div class="note">短保质期的今天买正好</div></div></div>
       <div class="itm"><div class="tm">13:00</div><div class="tx">回盛世酒店取行李（如需寄存）</div></div>
       <div class="itm"><div class="tm">13:15</div><div class="tx">打车去<span class="poi">澳门国际机场</span>（约10分钟）</div></div>
       <div class="itm"><div class="tm">13:30</div><div class="tx"><span class="loc">✈️ 到机场值机</span> · 药品、肉干留小票备查</div></div>
@@ -469,9 +469,10 @@
 
   <div class="tip"><h3>🗺️ 导航 App 怎么选</h3>
     <ul>
-      <li>页面里每个地点都有<b>两个入口</b>：<b>点地名</b>→ Google 地图；<b>点旁边「高德」小标签</b>→ 高德地图</li>
-      <li>每日行程顶部的「🧭 Google 全天多点导航」能一次串起当天所有站点；高德不支持多点串联，用「高德」标签逐站导航即可</li>
-      <li>港澳境内推荐 Google（步行、公交、叮叮车数据最全）；高德可用，但港澳步行路线支持较弱</li>
+      <li>页面里每个地点都有<b>两个入口</b>：<b>点地名</b>→ Google 地图定位；<b>点旁边「高德」小标签</b>→ <b>高德一键导航</b>（已内置坐标，直接开始导航到该地点）</li>
+      <li><b>移动环节</b>（打车去酒店、地铁去福田站、15路巴士上山、叮叮车）同样是两个入口：<b>点文字</b>→ Google 起终点路线；<b>点「高德」</b>→ 高德起终点导航</li>
+      <li>每日行程顶部有两个按钮：「🧭 Google · 全天多点导航」一次串起当天所有站点；「🧭 高德 · 起点→终点」走高德的主线方案</li>
+      <li>港澳境内推荐 Google（步行、公交、叮叮车数据最全）；高德在港澳的坐标已做 GCJ-02 转换，导航点落位准确</li>
       <li>内地网络下 Google 打不开、高德正常；到了港澳两个都能用</li>
     </ul>
   </div>
@@ -529,591 +530,109 @@
   tick();
 })();
 
-/* 地图双入口：地名点开 Google，旁边小标签点开高德 */
+/* 地图双入口：Google（搜索 / 全天多点路线） + 高德（一键导航，内置 GCJ-02 坐标） */
 (function(){
-  function gUrl(n){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(n);}
-  function aUrl(n){return "https://uri.amap.com/search?keyword="+encodeURIComponent(n)+"&view=map&callnative=1&src=travelhandbook";}
-  var pois=document.querySelectorAll(".poi");
-  for(var i=0;i<pois.length;i++){
-    var el=pois[i], raw=(el.textContent||"").trim();
-    var name=raw.replace(/^[“"「『]+/,"").replace(/[”"」』]+$/,"").replace(/[（(][^）)]*[）)]/g,"")
-                .replace(/^[\s·、，,]+|[\s·、，,]+$/g,"").trim();
-    if(!name) continue;
-    var a1=document.createElement("a");
-    a1.className="gm"; a1.href=gUrl(name); a1.target="_blank"; a1.rel="noopener"; a1.textContent=raw;
-    var a2=document.createElement("a");
-    a2.className="am"; a2.href=aUrl(name); a2.target="_blank"; a2.rel="noopener"; a2.textContent="高德";
-    el.textContent=""; el.appendChild(a1); el.appendChild(a2);
-    el.className=el.className.replace(/\bpoi\b/,"").replace(/\s+/g," ").trim();
-  }
-  var navs=document.querySelectorAll("details.day .daynav");
-  for(var j=0;j<navs.length;j++){
-    var b=navs[j].querySelector(".btn");
-    if(b) b.textContent=b.textContent.replace("🧭 ","🧭 Google · ");
-    var hint=document.createElement("div");
-    hint.className="navhint";
-    hint.textContent="高德：点行程里地名旁的「高德」标签逐站导航（高德不支持一次串联多点）";
-    navs[j].parentNode.insertBefore(hint, navs[j].nextSibling);
-  }
-})();
-</script>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<title>香港·澳门 3.5天双人旅行手册</title>
-<style>
-  :root{
-    --bg:#f6f3ec; --card:#ffffff; --text:#2b2620; --muted:#8a8377;
-    --border:#e6dfd2; --accent:#c2492f;
-    --d1:#d95043; --d2:#3b7fc4; --d3:#d98e2b; --d4:#3a9e6e; --d0:#8a6fb1;
-    --soft:#fbf9f4;
-  }
-  @media (prefers-color-scheme: dark){
-    :root{
-      --bg:#17161a; --card:#222027; --text:#ece7dd; --muted:#9a937f;
-      --border:#3a3730; --accent:#e8704f; --soft:#2a272e;
-      --d1:#e8786c; --d2:#6ba3dd; --d3:#e3a94f; --d4:#5cb98c; --d0:#a98fd1;
-    }
-  }
-  *{box-sizing:border-box; margin:0; padding:0;}
-  html{-webkit-text-size-adjust:100%;}
-  body{
-    font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Microsoft YaHei",sans-serif;
-    background:var(--bg); color:var(--text); line-height:1.65;
-    padding:16px 14px 60px;
-  }
-  .wrap{max-width:680px; margin:0 auto;}
-  h1{font-size:1.55rem; letter-spacing:.5px;}
-  .sub{color:var(--muted); font-size:.9rem; margin-top:4px;}
-  header{text-align:center; padding:18px 0 6px;}
-  .divider{border:none; border-top:2px dashed var(--border); margin:26px 0 20px;}
-
-  section{margin-bottom:8px;}
-  h2{font-size:1.12rem; margin-bottom:12px; display:flex; align-items:center; gap:8px;}
-  h2 .en{font-size:.72rem; color:var(--muted); font-weight:normal; letter-spacing:1px;}
-
-  /* 此刻关注 */
-  .now-card{
-    background:linear-gradient(135deg,var(--card),var(--soft));
-    border:1.5px solid var(--border); border-radius:18px;
-    padding:20px 18px; text-align:center; position:relative; overflow:hidden;
-  }
-  .now-card .tag{font-size:.78rem; color:var(--muted); letter-spacing:2px;}
-  .now-card .ev{font-size:1.2rem; font-weight:700; margin:6px 0 2px;}
-  .now-card .evtime{font-size:.85rem; color:var(--muted);}
-  .count{display:flex; justify-content:center; gap:8px; margin-top:14px;}
-  .count .cell{background:var(--bg); border:1px solid var(--border); border-radius:12px; min-width:64px; padding:8px 4px;}
-  .count .num{font-size:1.7rem; font-weight:800; font-variant-numeric:tabular-nums; line-height:1.1;}
-  .count .lab{font-size:.7rem; color:var(--muted);}
-  .now-done{font-size:1rem; color:var(--muted); padding:10px 0;}
-
-  /* 地图 */
-  .map-card{background:var(--card); border:1.5px solid var(--border); border-radius:18px; padding:12px;}
-  .map-card svg{width:100%; height:auto; display:block; border-radius:12px;}
-  .legend{display:flex; flex-wrap:wrap; gap:10px 16px; margin-top:10px; font-size:.8rem; color:var(--muted); justify-content:center;}
-  .legend i{display:inline-block; width:18px; height:4px; border-radius:2px; vertical-align:middle; margin-right:5px;}
-
-  /* 票务卡 */
-  .bk{background:var(--card); border:1.5px solid var(--border); border-radius:14px; padding:14px 16px; margin-bottom:10px;}
-  .bk .bk-head{display:flex; justify-content:space-between; align-items:baseline; gap:8px;}
-  .bk .bk-title{font-weight:700; font-size:.98rem;}
-  .bk .badge{font-size:.7rem; padding:2px 9px; border-radius:99px; white-space:nowrap; border:1px solid var(--border); color:var(--muted);}
-  .badge.ok{color:var(--d4); border-color:var(--d4);}
-  .badge.pending{color:var(--d3); border-color:var(--d3);}
-  .bk .route{font-size:1.06rem; font-weight:800; margin:6px 0 2px; font-variant-numeric:tabular-nums;}
-  .bk .route .arr{color:var(--muted); font-weight:normal; margin:0 6px;}
-  .bk .meta{font-size:.84rem; color:var(--muted);}
-  .bk .meta b{color:var(--text); font-weight:600;}
-
-  /* 逐日行程 */
-  details.day{background:var(--card); border:1.5px solid var(--border); border-radius:16px; margin-bottom:12px; overflow:hidden;}
-  details.day summary{
-    list-style:none; cursor:pointer; padding:14px 16px;
-    display:flex; align-items:center; gap:12px; user-select:none;
-  }
-  details.day summary::-webkit-details-marker{display:none;}
-  .dayno{
-    width:44px; height:44px; border-radius:12px; color:#fff; flex-shrink:0;
-    display:flex; flex-direction:column; align-items:center; justify-content:center; line-height:1.15;
-  }
-  .dayno .dn{font-size:.62rem; opacity:.85;}
-  .dayno .dd{font-size:1.05rem; font-weight:800;}
-  .dayhead-t{flex:1;}
-  .dayhead-t .t1{font-weight:700;}
-  .dayhead-t .t2{font-size:.78rem; color:var(--muted);}
-  .chev{color:var(--muted); font-size:.85rem; transition:transform .2s;}
-  details[open] .chev{transform:rotate(90deg);}
-  .daybody{padding:2px 16px 16px; border-top:1px dashed var(--border);}
-  .daynav{margin:12px 0 4px; display:flex; gap:8px; flex-wrap:wrap;}
-  .btn{
-    display:inline-block; font-size:.82rem; text-decoration:none; color:var(--text);
-    background:var(--bg); border:1.2px solid var(--border); border-radius:99px; padding:6px 14px;
-  }
-  .btn:active{opacity:.7;}
-  .itm{display:flex; gap:12px; padding:9px 0; border-bottom:1px dashed var(--border);}
-  .itm:last-child{border-bottom:none;}
-  .itm .tm{flex-shrink:0; width:52px; font-weight:700; font-size:.86rem; font-variant-numeric:tabular-nums; padding-top:2px;}
-  .itm .tx{flex:1; font-size:.92rem;}
-  .itm .tx .loc{font-weight:600;}
-  .flag{display:inline-block; font-size:.68rem; color:#fff; border-radius:6px; padding:1px 7px; margin-left:6px; vertical-align:1px;}
-  .flag.book{background:var(--d3);}
-  .flag.cash{background:var(--d1);}
-  a.loc, .poi, a.gm{
-    color:inherit; text-decoration:none; border-bottom:1px dotted var(--muted);
-  }
-  a.am{
-    display:inline-block; font-size:.64rem; line-height:1.5; margin-left:4px;
-    padding:0 6px; border:1px solid var(--d3); color:var(--d3);
-    border-radius:99px; text-decoration:none; white-space:nowrap;
-    vertical-align:1px; font-weight:600;
-  }
-  .navhint{font-size:.74rem; color:var(--muted); margin:0 0 6px;}
-  .note{font-size:.8rem; color:var(--muted); margin-top:3px;}
-  .stay{background:var(--soft); border-radius:10px; padding:8px 10px; margin-top:6px; font-size:.8rem; color:var(--muted);}
-
-  /* 待办 */
-  .todo{background:var(--card); border:1.5px solid var(--border); border-radius:16px; padding:16px 18px;}
-  .todo li{list-style:none; padding:6px 0 6px 22px; position:relative; font-size:.92rem; border-bottom:1px dashed var(--border);}
-  .todo li:last-child{border-bottom:none;}
-  .todo li::before{content:"•"; position:absolute; left:6px; color:var(--accent); font-weight:800;}
-  .todo li .when{color:var(--d3); font-size:.78rem; margin-left:4px;}
-  .todo li .why{color:var(--muted); font-size:.78rem; display:block;}
-
-  /* 贴士 */
-  .tip{background:var(--card); border:1.5px solid var(--border); border-radius:14px; padding:13px 16px; margin-bottom:10px;}
-  .tip h3{font-size:.94rem; margin-bottom:5px;}
-  .tip p, .tip li{font-size:.86rem; color:var(--muted);}
-  .tip ul{padding-left:18px;}
-  .tip b{color:var(--text); font-weight:600;}
-  footer{text-align:center; color:var(--muted); font-size:.75rem; margin-top:30px;}
-</style>
-</head>
-<body>
-<div class="wrap">
-
-<header>
-  <h1>香港 · 澳门 3.5 天双人旅行手册</h1>
-  <p class="sub">2026.9.24 – 9.28 · 深圳 1 晚 → 香港 1 晚 → 澳门 2 晚 · 所有时间均为当地时间 GMT+8</p>
-</header>
-
-<!-- ① 此刻关注 -->
-<section>
-  <div class="now-card">
-    <div class="tag">此 刻 关 注</div>
-    <div class="ev" id="nextEv">加载中…</div>
-    <div class="evtime" id="nextEvTime"></div>
-    <div class="count" id="countdown">
-      <div class="cell"><div class="num" id="cd-d">–</div><div class="lab">天</div></div>
-      <div class="cell"><div class="num" id="cd-h">–</div><div class="lab">时</div></div>
-      <div class="cell"><div class="num" id="cd-m">–</div><div class="lab">分</div></div>
-      <div class="cell"><div class="num" id="cd-s">–</div><div class="lab">秒</div></div>
-    </div>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- ② 总览地图 -->
-<section>
-  <h2>🗺️ 行程总览 <span class="en">OVERVIEW</span></h2>
-  <div class="map-card">
-    <svg viewBox="0 0 680 430" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="行程总览地图">
-      <!-- 海面 -->
-      <rect x="0" y="0" width="680" height="430" rx="12" fill="var(--soft)"/>
-      <path d="M0,140 Q170,128 340,146 T680,138" stroke="var(--border)" fill="none" stroke-width="1.5" stroke-dasharray="2 6"/>
-      <path d="M0,250 Q160,238 330,252 T680,246" stroke="var(--border)" fill="none" stroke-width="1.5" stroke-dasharray="2 6"/>
-      <!-- 深圳角 -->
-      <path d="M14,14 L210,14 Q222,60 196,96 L14,110 Z" fill="var(--card)" stroke="var(--border)" stroke-width="1.5"/>
-      <text x="30" y="42" font-size="13" fill="var(--muted)" font-weight="600">深圳</text>
-      <circle cx="80" cy="66" r="5" fill="var(--d0)"/>
-      <text x="92" y="71" font-size="12" fill="var(--text)">福田站</text>
-      <circle cx="140" cy="86" r="5" fill="var(--d0)"/>
-      <text x="152" y="91" font-size="12" fill="var(--text)">宝安机场</text>
-      <!-- 九龙 -->
-      <path d="M470,20 Q600,6 664,34 Q672,90 640,140 Q560,158 486,138 Q452,80 470,20 Z" fill="var(--card)" stroke="var(--border)" stroke-width="1.5"/>
-      <text x="560" y="42" font-size="13" fill="var(--muted)" font-weight="600">九龙</text>
-      <circle cx="520" cy="86" r="6" fill="var(--d1)"/>
-      <text x="452" y="76" font-size="12" fill="var(--text)">🏨 旺角维景</text>
-      <text x="486" y="106" font-size="12" fill="var(--text)">油麻地</text>
-      <circle cx="540" cy="122" r="5" fill="var(--d1)"/>
-      <text x="552" y="128" font-size="12" fill="var(--text)">尖沙咀</text>
-      <!-- 维港 + 港岛 -->
-      <path d="M436,208 Q560,190 668,206 Q676,258 648,300 Q560,318 470,300 Q428,254 436,208 Z" fill="var(--card)" stroke="var(--border)" stroke-width="1.5"/>
-      <text x="540" y="196" font-size="12" fill="var(--muted)" font-weight="600">维多利亚港</text>
-      <circle cx="510" cy="238" r="5" fill="var(--d2)"/>
-      <text x="436" y="243" font-size="12" fill="var(--text)">铜锣湾</text>
-      <circle cx="560" cy="242" r="5" fill="var(--d1)"/>
-      <text x="572" y="238" font-size="12" fill="var(--text)">中环</text>
-      <circle cx="596" cy="222" r="5" fill="var(--d1)"/>
-      <text x="606" y="214" font-size="12" fill="var(--text)">⛰️ 太平山</text>
-      <circle cx="470" cy="268" r="5" fill="var(--d2)"/>
-      <text x="420" y="286" font-size="12" fill="var(--text)">坚尼地城</text>
-      <circle cx="536" cy="262" r="5" fill="var(--d2)"/>
-      <text x="546" y="278" font-size="12" fill="var(--text)">上环码头</text>
-      <!-- 澳门半岛 -->
-      <path d="M60,196 Q120,182 158,200 Q166,226 138,242 Q76,244 58,222 Z" fill="var(--card)" stroke="var(--border)" stroke-width="1.5"/>
-      <text x="76" y="182" font-size="13" fill="var(--muted)" font-weight="600">澳门半岛</text>
-      <circle cx="106" cy="212" r="6" fill="var(--d3)"/>
-      <text x="118" y="217" font-size="12" fill="var(--text)">大三巴</text>
-      <circle cx="82" cy="232" r="4" fill="var(--d3)"/>
-      <text x="20" y="248" font-size="12" fill="var(--text)">福隆新街</text>
-      <!-- 氹仔 -->
-      <path d="M96,282 Q170,268 208,290 Q214,322 178,336 Q110,338 92,312 Z" fill="var(--card)" stroke="var(--border)" stroke-width="1.5"/>
-      <text x="128" y="278" font-size="12" fill="var(--muted)" font-weight="600">氹仔</text>
-      <circle cx="150" cy="306" r="6" fill="var(--d3)"/>
-      <text x="70" y="312" font-size="12" fill="var(--text)">🏨 盛世酒店 · 官也街</text>
-      <circle cx="196" cy="318" r="4" fill="var(--d2)"/>
-      <text x="206" y="322" font-size="11" fill="var(--muted)">氹仔码头</text>
-      <!-- 路环 -->
-      <path d="M120,362 Q180,352 210,368 Q208,394 168,402 Q122,398 120,362 Z" fill="var(--card)" stroke="var(--border)" stroke-width="1.5"/>
-      <circle cx="160" cy="382" r="5" fill="var(--d4)"/>
-      <text x="100" y="396" font-size="12" fill="var(--text)">路环 · 安德鲁葡挞</text>
-      <circle cx="238" cy="368" r="5" fill="var(--d4)"/>
-      <text x="248" y="372" font-size="12" fill="var(--text)">✈️ 澳门机场</text>
-      <!-- D1 红色：旺角→尖沙咀→中环→太平山 -->
-      <path d="M520,86 Q530,100 540,122 Q550,190 560,242 Q574,236 596,222"
-            stroke="var(--d1)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="1 8"/>
-      <!-- D2 蓝色：铜锣湾→中环→坚尼地城→上环→跨海船 -->
-      <path d="M510,238 Q535,240 560,242 Q520,262 470,268 Q500,264 536,262"
-            stroke="var(--d2)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="1 8"/>
-      <path d="M536,262 Q330,330 200,318" stroke="var(--d2)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="7 7"/>
-      <text x="330" y="316" font-size="12" fill="var(--d2)" font-weight="700">🚢 金光飞航 20:30</text>
-      <!-- D3 黄色：澳门半岛环线 -->
-      <path d="M106,212 Q92,220 82,232 Q96,224 106,212" stroke="var(--d3)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="1 8"/>
-      <!-- D4 绿色：氹仔→路环→机场 -->
-      <path d="M150,306 Q146,352 160,382 Q196,376 238,368"
-            stroke="var(--d4)" stroke-width="3" fill="none" stroke-linecap="round" stroke-dasharray="1 8"/>
-      <!-- 高铁线 -->
-      <path d="M85,70 Q260,130 490,90" stroke="var(--d0)" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-dasharray="10 6"/>
-      <text x="250" y="112" font-size="12" fill="var(--d0)" font-weight="700">🚄 G5811 福田→西九龙 9/25</text>
-      <!-- 飞机 -->
-      <text x="30" y="96" font-size="11" fill="var(--d0)">✈️ 9/24 北京→深圳</text>
-    </svg>
-    <div class="legend">
-      <span><i style="background:var(--d0)"></i>9/24 抵达+高铁</span>
-      <span><i style="background:var(--d1)"></i>9/25 香港九龙→山顶</span>
-      <span><i style="background:var(--d2)"></i>9/26 港岛→船往澳门</span>
-      <span><i style="background:var(--d3)"></i>9/27 澳门半岛</span>
-      <span><i style="background:var(--d4)"></i>9/28 路环→回程</span>
-    </div>
-    <p class="note" style="text-align:center; margin-top:8px;">🏨 每晚住处：9/24 深圳汉庭（过渡）→ 9/25 旺角维景 → 9/26–27 澳门盛世</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- ③ 已确认票务 -->
-<section>
-  <h2>🎫 已确认的票 & 酒店 <span class="en">BOOKED</span></h2>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">✈️ 东方航空 MU6667</span><span class="badge ok">已出票</span></div>
-    <div class="route">9/24（周四）17:15 <span class="arr">——▶</span> 20:15</div>
-    <p class="meta"><b>北京大兴</b> → <b>深圳宝安 T3</b> · 值机柜台 B1层W / 4层H（近4号门）· 截载时间以订单为准</p>
-  </div>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">🏨 汉庭深圳会展中心福星地铁站酒店</span><span class="badge ok">已订</span></div>
-    <p class="meta"><b>9/24 一晚</b> · 高级大床房 · 深圳福田 会展中心片区（地址电话见订单）<br>用途：落地深圳的过夜中转，距福田站地铁约 15–20 分钟</p>
-  </div>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">🚄 高铁 G5811</span><span class="badge ok">已出票</span></div>
-    <div class="route">9/25（周五）09:53 <span class="arr">——▶</span> 10:07</div>
-    <p class="meta"><b>福田站</b> → <b>香港西九龙站</b> · 二人同车厢 · 建议发车前 60 分钟到站（过关高峰 20–40 分钟）</p>
-  </div>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">🏨 香港旺角维景酒店</span><span class="badge ok">已订</span></div>
-    <p class="meta"><b>9/25 一晚</b> · 标准双人房 · 九龙旺角，港铁旺角东站旁（地址电话见订单）<br>9/26 退房后行李随身带到上环寄存（见 Day3 行程）</p>
-  </div>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">🚢 金光飞航（上环 → 氹仔）</span><span class="badge pending">待出票 · 9/26 上午购</span></div>
-    <div class="route">9/26（周六）20:30 <span class="arr">——▶</span> 约 21:30</div>
-    <p class="meta">上环港澳码头（信德中心3楼，地铁上环站D口）→ 澳门氹仔客运码头 · 周六夜航标准舱约 <b>HK$242/人</b><br>开船前 10 分钟停止入闸，建议 19:15 前到码头办出境 · 若满员可改乘后续班次或港珠澳大桥金巴（HK$65）</p>
-  </div>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">🏨 澳门盛世酒店</span><span class="badge ok">已订</span></div>
-    <p class="meta"><b>9/26 – 9/28 两晚</b> · 行政双人房 · 澳门氹仔（地址电话见订单）<br>步行约 5 分钟到官也街，夜逛威尼斯人/伦敦人/巴黎人很方便</p>
-  </div>
-
-  <div class="bk">
-    <div class="bk-head"><span class="bk-title">✈️ 南方航空 CZ6082</span><span class="badge ok">已出票</span></div>
-    <div class="route">9/28（周一）15:55 <span class="arr">——▶</span> 19:15</div>
-    <p class="meta"><b>澳门机场</b> → <b>北京大兴</b> · 盛世酒店打车约 10 分钟 · 13:30 前到机场值机</p>
-  </div>
-</section>
-
-<hr class="divider">
-
-<!-- ④ 逐日行程 -->
-<section>
-  <h2>📅 逐日行程 <span class="en">ITINERARY</span></h2>
-
-  <!-- 9/24 -->
-  <details class="day" open>
-    <summary>
-      <div class="dayno" style="background:var(--d0)"><span class="dn">DAY</span><span class="dd">1</span></div>
-      <div class="dayhead-t"><div class="t1">9/24 周四 · 北京 → 深圳</div><div class="t2">晚间飞行 + 中转过夜</div></div>
-      <span class="chev">▶</span>
-    </summary>
-    <div class="daybody">
-      <div class="daynav">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E6%B7%B1%E5%9C%B3%E5%AE%9D%E5%AE%89%E5%9B%BD%E9%99%85%E6%9C%BA%E5%9C%BAT3&destination=%E6%B1%89%E5%BA%AD%E9%85%92%E5%BA%97%E6%B7%B1%E5%9C%B3%E4%BC%9A%E5%B1%95%E4%B8%AD%E5%BF%83%E7%A6%8F%E6%98%9F%E5%9C%B0%E9%93%81%E7%AB%99%E5%BA%97&travelmode=driving" target="_blank" rel="noopener">🧭 全程导航（机场→酒店）</a>
-      </div>
-      <div class="itm"><div class="tm">17:15</div><div class="tx"><span class="loc">✈️ MU6667 起飞</span> · 北京大兴 → 深圳宝安T3，20:15 落地</div></div>
-      <div class="itm"><div class="tm">21:00</div><div class="tx"><span class="poi">打车去酒店</span>（约 45 分钟 / ¥100 左右），或机场地铁11号线转乘</div></div>
-      <div class="itm"><div class="tm">22:00</div><div class="tx">入住休息，明早赶高铁，早点睡
-        <div class="stay">🏨 汉庭深圳会展中心福星地铁站酒店（1晚）</div></div></div>
-    </div>
-  </details>
-
-  <!-- 9/25 -->
-  <details class="day">
-    <summary>
-      <div class="dayno" style="background:var(--d1)"><span class="dn">DAY</span><span class="dd">2</span></div>
-      <div class="dayhead-t"><div class="t1">9/25 周五 · 香港：旺角 → 尖沙咀 → 太平山</div><div class="t2">11:00 才正式开玩，节奏别排太满</div></div>
-      <span class="chev">▶</span>
-    </summary>
-    <div class="daybody">
-      <div class="daynav">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E9%A6%99%E6%B8%AF%E6%97%BA%E8%A7%92%E7%BB%B4%E6%99%AF%E9%85%92%E5%BA%97&destination=%E5%A4%AA%E5%B9%B3%E5%B1%B1%E5%87%8C%E9%9C%84%E9%98%81&waypoints=%E9%87%91%E5%8D%8E%E5%86%B0%E5%8E%85%7C%E6%B2%B9%E9%BA%BB%E5%9C%B0%E8%AD%A6%E7%BD%B2%7C%E5%B0%96%E6%B2%99%E5%92%80%E6%98%9F%E5%85%89%E5%A4%A7%E9%81%93%7C%E4%B8%AD%E7%92%B0%E7%A0%81%E5%A4%B4&travelmode=transit" target="_blank" rel="noopener">🧭 全天多点导航</a>
-      </div>
-      <div class="itm"><div class="tm">08:15</div><div class="tx">深圳酒店退房出发，<span class="poi">地铁/打车去福田站</span></div></div>
-      <div class="itm"><div class="tm">08:45</div><div class="tx">到福田站，过港方自助通道（刷通行证+指纹）</div></div>
-      <div class="itm"><div class="tm">09:53</div><div class="tx"><span class="loc">🚄 G5811 发车</span> → 10:07 抵香港西九龙站</div></div>
-      <div class="itm"><div class="tm">11:00</div><div class="tx">西九龙站打车/地铁到旺角，<span class="poi">旺角维景酒店</span>寄存行李
-        <div class="note">西九龙→旺角：出租车最省事（约HK$40）；行李不放身上，后面轻装玩</div></div></div>
-      <div class="itm"><div class="tm">11:15</div><div class="tx">午餐：<span class="poi">金华冰厅</span> 菠萝油+奶茶（太子站）</div></div>
-      <div class="itm"><div class="tm">12:30</div><div class="tx">旺角街市、通菜街（金鱼街）随逛，朗豪坊路过可选<span class="flag cash">现金店·椰汁大王/嘉多娜在这片</span></div></div>
-      <div class="itm"><div class="tm">14:00</div><div class="tx">沿弥敦道南行到油麻地：<span class="poi">果栏</span>、<span class="poi">油麻地警署</span>（港剧取景地）</div></div>
-      <div class="itm"><div class="tm">15:15</div><div class="tx">尖沙咀：<span class="poi">星光大道</span>、维港海滨长廊，对岸中环天际线</div></div>
-      <div class="itm"><div class="tm">17:00</div><div class="tx"><span class="poi">天星小轮</span> → 中环码头（约HK$5，坐上层吹海风）</div></div>
-      <div class="itm"><div class="tm">17:40</div><div class="tx">中环晚餐：威灵顿街排档一带</div></div>
-      <div class="itm"><div class="tm">19:00</div><div class="tx"><span class="poi">15路巴士上山</span>（HK$12，弯多但便宜且免排队）<span class="flag book">摩天台428建议提前线上购票</span></div></div>
-      <div class="itm"><div class="tm">20:00</div><div class="tx"><span class="loc">⛰️ 太平山凌霄阁摩天台428</span> 看夜景（重头戏）</div></div>
-      <div class="itm"><div class="tm">21:45</div><div class="tx">坐<span class="poi">山顶缆车</span>下山体验（排队长就改15路）→ 地铁回旺角 → 取行李入住
-        <div class="stay">🏨 香港旺角维景酒店（1晚）</div></div></div>
-    </div>
-  </details>
-
-  <!-- 9/26 -->
-  <details class="day">
-    <summary>
-      <div class="dayno" style="background:var(--d2)"><span class="dn">DAY</span><span class="dd">3</span></div>
-      <div class="dayhead-t"><div class="t1">9/26 周六 · 港岛 → 晚船去澳门</div><div class="t2">铜锣湾 → 坚尼地城 → 上环伴手礼 → 20:30 船</div></div>
-      <span class="chev">▶</span>
-    </summary>
-    <div class="daybody">
-      <div class="daynav">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E9%A6%99%E6%B8%AF%E6%97%BA%E8%A7%92%E7%BB%B4%E6%99%AF%E9%85%92%E5%BA%97&destination=%E4%B8%8A%E7%92%B0%E6%B8%AF%E6%BE%B3%E7%A2%BC%E9%A0%AD&waypoints=%E9%8A%85%E9%91%BC%E7%81%A3%E6%99%82%E4%BB%A3%E5%BB%A3%E5%A0%B4%7C%E4%B8%AD%E7%92%B0%7C%E5%A0%85%E5%B0%BC%E5%9C%B0%E5%9F%8E%E6%B5%B7%E6%BF%B1&travelmode=transit" target="_blank" rel="noopener">🧭 全天多点导航</a>
-      </div>
-      <div class="itm"><div class="tm">09:30</div><div class="tx">退房，带行李地铁到上环（约25分钟）</div></div>
-      <div class="itm"><div class="tm">09:45</div><div class="tx">行李存到上环码头附近的寄存点<span class="flag cash">约HK$35–45/件·建议提前预订</span><div class="note">LuggageHero（选9点开门的网点）或 Bounce（上环站旁，HK$35/件/天，11:00开门）；不想比价就用码头官方寄存（信德中心1楼103号铺，7:00开门，最省心但按你时长约HK$170/件）</div></div></div>
-      <div class="itm"><div class="tm">10:15</div><div class="tx">地铁到铜锣湾：SOGO、希慎广场、时代广场<span class="flag cash">荣记粉面只收现金</span></div></div>
-      <div class="itm"><div class="tm">12:00</div><div class="tx">午餐：<span class="poi">牛奶冰室</span> 拉丝菠萝包 或 <span class="poi">荣记粉面</span> 车仔面牛腩粉</div></div>
-      <div class="itm"><div class="tm">13:30</div><div class="tx">中环：<span class="poi">"所有目的地"楼梯</span>打卡</div></div>
-      <div class="itm"><div class="tm">14:00</div><div class="tx"><span class="poi">叮叮车</span>（HK$3）→ 坚尼地城，沿途港岛老街景</div></div>
-      <div class="itm"><div class="tm">14:40</div><div class="tx">坚尼地城：海边公园、网红咖啡店；晚餐可选<span class="poi">卓记</span>（三杯鸡、黑松露牛肉炒饭）</div></div>
-      <div class="itm"><div class="tm">16:45</div><div class="tx">回中环/上环扫伴手礼：<span class="poi">珍妮曲奇</span>（上环，只收现金）、<span class="poi">永吉街柠檬王</span><span class="flag cash">现金</span><div class="note">曲奇保质期短，今天买正好；药品前两天在万宁已扫完</div></div></div>
-      <div class="itm"><div class="tm">18:15</div><div class="tx">回寄存点取行李（人已在上环，零回头路）</div></div>
-      <div class="itm"><div class="tm">19:15</div><div class="tx">到<span class="poi">上环港澳码头</span>（信德中心3楼），办出境</div></div>
-      <div class="itm"><div class="tm">20:30</div><div class="tx"><span class="loc">🚢 金光飞航 → 氹仔客运码头</span>（约21:30到）<span class="flag book">当天上午手机购票</span></div></div>
-      <div class="itm"><div class="tm">21:45</div><div class="tx">码头打车/步行到<span class="poi">盛世酒店</span>入住，放下行李</div></div>
-      <div class="itm"><div class="tm">22:15</div><div class="tx">精力还行就去：<span class="poi">威尼斯人</span> → <span class="poi">伦敦人</span> → <span class="poi">巴黎人</span> 夜景环线，累了直接睡
-        <div class="stay">🏨 澳门盛世酒店（9/26–9/28 两晚，之后不用再挪行李）</div></div></div>
-    </div>
-  </details>
-
-  <!-- 9/27 -->
-  <details class="day">
-    <summary>
-      <div class="dayno" style="background:var(--d3)"><span class="dn">DAY</span><span class="dd">4</span></div>
-      <div class="dayhead-t"><div class="t1">9/27 周日 · 澳门半岛全天</div><div class="t2">大三巴 → 福隆新街 → 岗顶 → 议事亭前地</div></div>
-      <span class="chev">▶</span>
-    </summary>
-    <div class="daybody">
-      <div class="daynav">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E5%A4%A7%E4%B8%89%E5%B7%B4%E7%89%8C%E5%9D%8A&destination=%E8%AD%B0%E4%BA%8B%E4%BA%AD%E5%89%8D%E5%9C%B0&waypoints=%E5%A4%A7%E7%A0%B2%E5%8F%B0%7C%E7%A6%8F%E9%9A%86%E6%96%B0%E8%A1%97%7C%E5%B4%97%E9%A0%82%E5%89%8D%E5%9C%B0&travelmode=walking" target="_blank" rel="noopener">🧭 全天多点导航（步行）</a>
-      </div>
-      <div class="itm"><div class="tm">09:15</div><div class="tx">酒店出发，公交（MOP$6）或打车（约MOP$40–50）过海去澳门半岛</div></div>
-      <div class="itm"><div class="tm">10:00</div><div class="tx"><span class="poi">大三巴牌坊</span> → 右侧石阶上 <span class="poi">哪吒庙</span> → <span class="poi">旧城墙遗址</span> → <span class="poi">大炮台</span>俯瞰半岛<div class="note">顺路可先去最香饼家（上午货最齐，肉心杏仁饼，备少量现金）</div></div></div>
-      <div class="itm"><div class="tm">12:00</div><div class="tx">步行8分钟到<span class="poi">福隆新街</span>：晚清岭南建筑群拍照 + 午餐<span class="flag cash">添发碗仔翅只收现金</span><div class="note">三元及第粥、冠环球肉干都在这条街</div></div></div>
-      <div class="itm"><div class="tm">14:00</div><div class="tx"><span class="poi">东望洋新街</span>彩色墙坡道 → <span class="poi">岗顶前地</span>（岗顶剧院、圣奥斯定教堂）</div></div>
-      <div class="itm"><div class="tm">15:30</div><div class="tx"><span class="poi">议事亭前地</span>波浪地砖 → 新马路买伴手礼：<span class="poi">钜记</span>、<span class="poi">咀香园</span>（免费试吃，微信支付宝都行）、<span class="poi">柠檬王</span></div></div>
-      <div class="itm"><div class="tm">17:30</div><div class="tx">公交/打车回氹仔</div></div>
-      <div class="itm"><div class="tm">18:30</div><div class="tx"><span class="poi">官也街</span>晚餐：老Day牛杂（微辣）、泽贤记鸡蛋仔（先下单再逛）</div></div>
-      <div class="itm"><div class="tm">20:00</div><div class="tx">自由安排：威尼斯人室内运河 / 回酒店休息</div></div>
-    </div>
-  </details>
-
-  <!-- 9/28 -->
-  <details class="day">
-    <summary>
-      <div class="dayno" style="background:var(--d4)"><span class="dn">DAY</span><span class="dd">5</span></div>
-      <div class="dayhead-t"><div class="t1">9/28 周一 · 路环 → 回京</div><div class="t2">13:30 必须到机场，上午收尾</div></div>
-      <span class="chev">▶</span>
-    </summary>
-    <div class="daybody">
-      <div class="daynav">
-        <a class="btn" href="https://www.google.com/maps/dir/?api=1&origin=%E5%AE%89%E5%BE%B7%E9%B2%81%E9%A5%BC%E5%BA%97%E8%B7%AF%E7%92%B0%E7%B8%BD%E5%BA%97&destination=%E6%BE%B3%E9%96%80%E5%9C%8B%E9%9A%9B%E6%A9%9F%E5%A0%B4&waypoints=%E5%AE%98%E4%B9%9F%E8%A1%97&travelmode=driving" target="_blank" rel="noopener">🧭 全天多点导航</a>
-      </div>
-      <div class="itm"><div class="tm">08:30</div><div class="tx">酒店出发，公交约10–15分钟到<span class="poi">路环市区</span></div></div>
-      <div class="itm"><div class="tm">09:00</div><div class="tx"><span class="poi">安德鲁饼店总店</span>现烤葡挞（早到避排队）→ <span class="poi">十月初五马路</span>彩色房子海边散步 → 路环码头吹风</div></div>
-      <div class="itm"><div class="tm">11:15</div><div class="tx">回<span class="poi">官也街</span>收尾：泽贤记先下单 → 老Day牛杂、莫义记榴莲雪糕、长洲糯米糍、晃记凤凰卷；最后采购：<span class="poi">O-Moon</span> 花砖冰箱贴、<span class="poi">Macau 520</span> 瓷砖杯垫、钜记肉干<span class="flag cash">小店备现金</span><div class="note">短保质期的今天买正好</div></div></div>
-      <div class="itm"><div class="tm">13:00</div><div class="tx">回盛世酒店取行李（如需寄存）</div></div>
-      <div class="itm"><div class="tm">13:15</div><div class="tx">打车去<span class="poi">澳门国际机场</span>（约10分钟）</div></div>
-      <div class="itm"><div class="tm">13:30</div><div class="tx"><span class="loc">✈️ 到机场值机</span> · 药品、肉干留小票备查</div></div>
-      <div class="itm"><div class="tm">15:55</div><div class="tx">CZ6082 起飞 → 19:15 北京大兴，回家 🏠</div></div>
-    </div>
-  </details>
-</section>
-
-<hr class="divider">
-
-<!-- ⑤ 待办清单 -->
-<section>
-  <h2>✅ 待办清单 <span class="en">TO DO</span></h2>
-  <ul class="todo">
-    <li>确认两人港澳通行证及有效签注<span class="when">立即</span><span class="why">个人旅游G签，香港、澳门各一次；北京办理约需7个工作日</span></li>
-    <li>9/26 上午手机购买金光飞航船票（上环→氹仔 20:30 班）<span class="when">9/26 上午</span><span class="why">官网 hk.cotaiwaterjet.com 或微信小程序；提前购可退（开航前3小时外收HK$40/张）</span></li>
-    <li>预订 9/26 上环行李寄存<span class="when">9/25 前</span><span class="why">LuggageHero（约HK$40/件/天，有9点开门网点）或 Bounce（上环站旁HK$35/件/天，11:00开门）；备选：码头官方寄存（信德中心1楼103号铺，7:00起）</span></li>
-    <li>换现金：港币 500–800 + 澳门元 200 零钱<span class="when">出发前</span><span class="why">椰汁大王、嘉多娜、荣记粉面、珍妮曲奇、添发碗仔翅、最香饼家只收现金</span></li>
-    <li>开通港澳台漫游或买流量卡<span class="when">出发前</span><span class="why">香港和澳门流量是分开的，注意都要覆盖</span></li>
-    <li>手机装好 Google 地图 + 香港地铁 MTR app<span class="when">出发前</span><span class="why">内地导航境外用不了；澳门步行导航不太准，认路牌</span></li>
-    <li>准备英标转换插头<span class="when">收拾行李</span><span class="why">香港三脚方插；澳门和内地一样不用</span></li>
-    <li>支付宝搜"境外出行"领香港、澳门满减券<span class="when">出发前</span></li>
-    <li>旺角/铜锣湾万宁一站式买齐药品清单<span class="when">9/25–26</span><span class="why">黄道益、撒隆巴斯、无比滴、双飞人、保济丸、念慈庵等；留小票</span></li>
-    <li>上环买珍妮曲奇、柠檬王<span class="when">9/26 下午</span><span class="why">曲奇保质期1–3个月，香港就这一天路过上环</span></li>
-    <li>官也街最后采购短保质期手信（肉干、蛋挞酱）<span class="when">9/28 中午</span></li>
-    <li>核对过关限制：酒每人限750ml，药品留小票<span class="when">回程前</span></li>
-  </ul>
-</section>
-
-<hr class="divider">
-
-<!-- ⑥ 实用贴士 -->
-<section>
-  <h2>💡 实用贴士 <span class="en">TIPS</span></h2>
-
-  <div class="tip"><h3>💰 支付与现金</h3>
-    <ul>
-      <li>香港换 <b>500–800 港币</b>现金，澳门换 <b>200 澳门元</b>零钱（澳门打车只收现金）</li>
-      <li>只收现金的店：椰汁大王、嘉多娜、荣记粉面、珍妮曲奇、添发碗仔翅、最香饼家、老奶奶冰箱贴</li>
-      <li>其余基本微信/支付宝都行；支付宝搜"境外出行"领两地满减券</li>
-    </ul>
-  </div>
-
-  <div class="tip"><h3>🛂 证件与过关</h3>
-    <ul>
-      <li>港澳通行证 + G签（港、澳各一次）；走自助通道刷证+指纹，约 5–10 分钟</li>
-      <li>西九龙高铁过关：发车前 1 小时到站，预留 20–40 分钟</li>
-      <li>回程过关限制：饼食凉果罐头茶叶可带，<b>酒每人限 750ml</b>；药品留小票，量大可能被查</li>
-    </ul>
-  </div>
-
-  <div class="tip"><h3>🚇 交通</h3>
-    <ul>
-      <li>香港地铁用八达通或支付宝乘车码；港岛叮叮车 HK$3 全程一口价</li>
-      <li>天星小轮约 HK$5，坐上层</li>
-      <li>太平山：上山建议 15 路巴士（HK$12，免排队），下山坐缆车体验</li>
-      <li>澳门：公交 MOP$6；打车 MOP$40–50 起步跨海；氹仔岛内多靠步行</li>
-      <li>澳门 Google 地图步行导航不太准，认路牌更靠谱</li>
-    </ul>
-  </div>
-
-  <div class="tip"><h3>🗺️ 导航 App 怎么选</h3>
-    <ul>
-      <li>页面里每个地点都有<b>两个入口</b>：<b>点地名</b>→ Google 地图；<b>点旁边「高德」小标签</b>→ 高德地图</li>
-      <li>每日行程顶部的「🧭 Google 全天多点导航」能一次串起当天所有站点；高德不支持多点串联，用「高德」标签逐站导航即可</li>
-      <li>港澳境内推荐 Google（步行、公交、叮叮车数据最全）；高德可用，但港澳步行路线支持较弱</li>
-      <li>内地网络下 Google 打不开、高德正常；到了港澳两个都能用</li>
-    </ul>
-  </div>
-
-  <div class="tip"><h3>🔌 通讯与其他</h3>
-    <ul>
-      <li>香港英标三脚方插，<b>带转换头</b>；澳门与内地相同</li>
-      <li>港澳流量分开计，漫游套餐确认两地都含</li>
-      <li>老店多在<b>上午10点后</b>货品齐全，去太早没货</li>
-      <li>鸡蛋仔类现做店（泽贤记）下单后等约半小时，先下单再逛</li>
-    </ul>
-  </div>
-</section>
-
-<footer>所有时间均为 GMT+8 · 确认号与证件信息不在本页 · 一路顺风 🎉</footer>
-</div>
-
-<script>
-(function(){
-  // 关键锚点事件（GMT+8）
-  var events=[
-    {t:"2026-09-24T17:15:00+08:00", d:"9月24日 17:15", s:"✈️ MU6667 北京大兴起飞 → 深圳宝安"},
-    {t:"2026-09-25T09:53:00+08:00", d:"9月25日 09:53", s:"🚄 G5811 福田站发车 → 香港西九龙"},
-    {t:"2026-09-26T20:30:00+08:00", d:"9月26日 20:30", s:"🚢 金光飞航 上环 → 澳门氹仔"},
-    {t:"2026-09-27T09:15:00+08:00", d:"9月27日 09:15", s:"🏨 盛世酒店出发 · 澳门半岛一日"},
-    {t:"2026-09-28T13:15:00+08:00", d:"9月28日 13:15", s:"🚕 出发去澳门机场"},
-    {t:"2026-09-28T15:55:00+08:00", d:"9月28日 15:55", s:"✈️ CZ6082 澳门起飞 → 北京大兴"}
+  /* 高德在港澳使用 GCJ-02 坐标，以下为转换后的坐标（lng,lat） */
+  var GEO={
+    "深圳宝安国际机场T3":"113.808181,22.637468",
+    "汉庭酒店(深圳会展中心福星地铁站店)":"114.081732,22.537535",
+    "福田站":"114.054749,22.539553",
+    "香港旺角维景酒店":"114.172456,22.320691",
+    "金华冰厅 太子":"114.174716,22.319548",
+    "油麻地果栏":"114.174180,22.304319",
+    "油麻地警署":"114.173512,22.306787",
+    "尖沙咀星光大道":"114.180737,22.291391",
+    "尖沙咀天星码头":"114.172956,22.290801",
+    "太平山顶":"114.155171,22.268433",
+    "山顶缆车总站":"114.163472,22.274336",
+    "铜锣湾时代广场":"114.187037,22.275596",
+    "中环 皇后大道中":"114.163273,22.279109",
+    "中环":"114.163273,22.279109",
+    "中环(交易广场)巴士总站":"114.164884,22.283343",
+    "中环叮叮车总站":"114.163273,22.279109",
+    "坚尼地城":"114.133482,22.279762",
+    "上环港澳客运码头":"114.157448,22.285960",
+    "氹仔客运码头":"113.579156,22.160025",
+    "澳门威尼斯人":"113.565532,22.145247",
+    "澳门伦敦人":"113.570385,22.142852",
+    "澳门巴黎人":"113.566738,22.140679",
+    "大三巴牌坊":"113.545972,22.194525",
+    "大三巴哪吒庙":"113.545779,22.194778",
+    "大三巴旧城墙遗址":"113.545647,22.194696",
+    "大三巴炮台":"113.547351,22.194133",
+    "福隆新街":"113.542735,22.191392",
+    "东望洋新街":"113.550696,22.191243",
+    "岗顶前地":"113.543280,22.189350",
+    "议事亭前地":"113.545104,22.190899",
+    "官也街":"113.562042,22.150637",
+    "安德鲁饼店 路环总店":"113.556412,22.115279",
+    "路环市区":"113.556415,22.113441",
+    "路环十月初五马路":"113.555469,22.112223",
+    "澳门国际机场":"113.594378,22.146946"
+  };
+  /* 每日「起点→终点」高德导航 */
+  var DAYAM=[
+    {from:"深圳宝安国际机场T3",to:"汉庭酒店(深圳会展中心福星地铁站店)",mode:"car",label:"机场→酒店"},
+    {from:"香港旺角维景酒店",to:"太平山顶",mode:"bus",label:"酒店→太平山顶"},
+    {from:"香港旺角维景酒店",to:"上环港澳客运码头",mode:"bus",label:"酒店→上环码头"},
+    {from:"大三巴牌坊",to:"议事亭前地",mode:"walk",label:"大三巴→议事亭前地"},
+    {from:"安德鲁饼店 路环总店",to:"澳门国际机场",mode:"car",label:"路环→机场"}
   ];
-  var elE=document.getElementById("nextEv"), elT=document.getElementById("nextEvTime");
-  var cd=document.getElementById("countdown");
-  var D=document.getElementById("cd-d"),H=document.getElementById("cd-h"),
-      M=document.getElementById("cd-m"),S=document.getElementById("cd-s");
-  function pad(n){return (n<10?"0":"")+n;}
-  function tick(){
-    var now=Date.now(), next=null;
-    for(var i=0;i<events.length;i++){
-      var t=new Date(events[i].t).getTime();
-      if(t>now){next=events[i];break;}
-    }
-    if(!next){
-      elE.textContent="🎉 旅程已结束，欢迎回家";
-      elT.textContent="香港·澳门 2026.9.24–9.28";
-      cd.style.display="none";
-      return;
-    }
-    elE.textContent=next.s;
-    elT.textContent=next.d+" · GMT+8";
-    var diff=Math.floor((new Date(next.t).getTime()-now)/1000);
-    D.textContent=Math.floor(diff/86400);
-    H.textContent=pad(Math.floor(diff%86400/3600));
-    M.textContent=pad(Math.floor(diff%3600/60));
-    S.textContent=pad(diff%60);
-    setTimeout(tick,1000);
+  function gSearch(n){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(n);}
+  function gDir(f,t,m){return "https://www.google.com/maps/dir/?api=1&origin="+encodeURIComponent(f)+"&destination="+encodeURIComponent(t)+"&travelmode="+(m||"driving");}
+  function aSearch(n){return "https://uri.amap.com/search?keyword="+encodeURIComponent(n)+"&view=map&callnative=1&src=travelhandbook";}
+  function aNav(f,t,mode){
+    var u="https://uri.amap.com/navigation?";
+    if(f&&GEO[f]) u+="from="+GEO[f]+","+encodeURIComponent(f)+"&";
+    u+="to="+GEO[t]+","+encodeURIComponent(t)+"&mode="+(mode||"car")+"&callnative=1&src=travelhandbook";
+    return u;
   }
-  tick();
-})();
+  function aMode(m){return m==="driving"?"car":m==="transit"?"bus":m==="walking"?"walk":(m||"car");}
+  function mk(cls,href,text,title){var a=document.createElement("a");a.className=cls;a.href=href;a.target="_blank";a.rel="noopener";a.textContent=text;if(title)a.title=title;return a;}
+  function clean(el,cls){el.className=el.className.replace(new RegExp("\\b"+cls+"\\b"),"").replace(/\s+/g," ").trim();}
 
-/* 地图双入口：地名点开 Google，旁边小标签点开高德 */
-(function(){
-  function gUrl(n){return "https://www.google.com/maps/search/?api=1&query="+encodeURIComponent(n);}
-  function aUrl(n){return "https://uri.amap.com/search?keyword="+encodeURIComponent(n)+"&view=map&callnative=1&src=travelhandbook";}
+  /* 单点：点地名=Google 定位；点「高德」=高德一键导航（无坐标的降级为搜索） */
   var pois=document.querySelectorAll(".poi");
   for(var i=0;i<pois.length;i++){
     var el=pois[i], raw=(el.textContent||"").trim();
     var name=raw.replace(/^[“"「『]+/,"").replace(/[”"」』]+$/,"").replace(/[（(][^）)]*[）)]/g,"")
                 .replace(/^[\s·、，,]+|[\s·、，,]+$/g,"").trim();
-    if(!name) continue;
-    var a1=document.createElement("a");
-    a1.className="gm"; a1.href=gUrl(name); a1.target="_blank"; a1.rel="noopener"; a1.textContent=raw;
-    var a2=document.createElement("a");
-    a2.className="am"; a2.href=aUrl(name); a2.target="_blank"; a2.rel="noopener"; a2.textContent="高德";
-    el.textContent=""; el.appendChild(a1); el.appendChild(a2);
-    el.className=el.className.replace(/\bpoi\b/,"").replace(/\s+/g," ").trim();
+    var q=el.getAttribute("data-q")||name;
+    if(!q) continue;
+    var amap = GEO[q] ? aNav(null,q,"car") : aSearch(q);
+    el.textContent="";
+    el.appendChild(mk("gm",gSearch(q),raw));
+    el.appendChild(mk("am",amap,"高德",GEO[q]?"高德一键导航到「"+q+"」":"高德搜索「"+q+"」"));
+    el.removeAttribute("data-q");
+    clean(el,"poi");
   }
+
+  /* 移动环节：点文字=Google 起终点路线；点「高德」=高德起终点导航 */
+  var gos=document.querySelectorAll(".go");
+  for(var k=0;k<gos.length;k++){
+    var g=gos[k], lab=(g.textContent||"").trim();
+    var f=g.getAttribute("data-from"), t=g.getAttribute("data-to"), m=g.getAttribute("data-mode");
+    if(!t) continue;
+    var amapLink = GEO[t] ? aNav(f,t,aMode(m)) : aSearch(t);
+    g.textContent="";
+    g.appendChild(mk("gm",gDir(f,t,m),lab));
+    g.appendChild(mk("am",amapLink,"高德",GEO[t]?"高德导航："+f+" → "+t:"高德搜索："+t));
+    clean(g,"go");
+  }
+
+  /* 每天顶部：Google 多点导航 + 高德起终点导航 */
   var navs=document.querySelectorAll("details.day .daynav");
   for(var j=0;j<navs.length;j++){
     var b=navs[j].querySelector(".btn");
     if(b) b.textContent=b.textContent.replace("🧭 ","🧭 Google · ");
+    var d=DAYAM[j];
+    if(d&&GEO[d.to]){
+      var ab=mk("btn",aNav(d.from,d.to,d.mode),"🧭 高德 · "+d.label,"高德导航："+d.from+" → "+d.to);
+      navs[j].appendChild(ab);
+    }
     var hint=document.createElement("div");
     hint.className="navhint";
-    hint.textContent="高德：点行程里地名旁的「高德」标签逐站导航（高德不支持一次串联多点）";
+    hint.textContent="点地名=Google 定位 ·「高德」标签=高德一键导航；移动环节点文字=Google 路线、「高德」=高德路线";
     navs[j].parentNode.insertBefore(hint, navs[j].nextSibling);
   }
 })();
